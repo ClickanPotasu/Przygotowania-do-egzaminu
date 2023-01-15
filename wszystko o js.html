@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wszystko o JavaScript</title>
+</head>
+<body>
+    <div id="main">
+        <h1 id="1">Pierwszy</h1> <input type="button" onclick="f1()">
+        <h2 id="2">Drugi</h2> <input type="button" onclick="f2()">
+        <h3 id="3">Trzeci</h3> <input type="button" onclick="f3()">
+        <h4 id="4">Czwarty</h4> <input type="button" onclick="f4()">
+        <h5 id="5">Piąty</h5> <input type="button" onclick="f5()">
+        <h6 id="6">Szósty</h6> <input type="button" onclick="f6()">
+        <p id="7">Siódmy</p> <input type="button" onclick="f7()">
+    </div>
+
+<script>
+var v1 = document.getElementById('1');
+var v2 = document.getElementById('2');
+var v3 = document.getElementById('3');
+var v4 = document.getElementById('4');
+var v5 = document.getElementById('5');
+var v6 = document.getElementById('6');
+var v7 = document.getElementById('7');
+
+function f1(){
+    v1.style.color = ('red');
+}
+
+function f2(){
+    v2.style.backgroundColor = ('red');
+}
+
+function f3(){
+    v3.style.background = 'linear-gradient(red, blue)';
+}
+
+function f4(){
+    v4.innerHTML = 'XDDDDD to miał być czwarty';
+}
+
+function f5(){
+    var wartosc = v3.style.background;
+    v5.style.background = (wartosc);
+}
+
+function f6(){
+    let x = 2137;
+    let y = 420;
+    let z = 0;
+    z = x%y;
+    v6.innerHTML = z;
+}
+
+function f7(){
+    v7.style.color = ('red');
+}
+
+
+</script>
+
+</body>
+</html>
