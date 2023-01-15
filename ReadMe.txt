@@ -1,0 +1,1 @@
+Tak jak na egzaminie trzeba importować baze danych
