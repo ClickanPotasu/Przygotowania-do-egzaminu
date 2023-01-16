@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eg</title>
+    <style>
+        img{
+            border-radius: 20px;
+            height: 200px;
+        }
+        table{
+            border: 1px solid;
+        }
+        td:hover{
+            background-color: steelblue;
+            color:white
+        }
+    </style>
+</head>
+<body>
+    <h1>Potrzebne polecenia: </h1><br>
+    <p>&lt;sup&gt; - <sup>Indeks górny</sup></p><br>
+    <p> .border-radius: 20px; - Zaokrąglenie krawędzi obrazów</p><br>
+    <img src="img.png" alt="obraz">
+    <p>td:hover nad tabelą</p>
+    <table>
+        <tr><td>X</td><td>D</td></tr>
+        <tr><td>6</td><td>9</td></tr>
+    </table>
+    <p>Tutaj skrypt:</p><br>
+    <p>Powierzchnia, podaj w m<sup>2</sup></p><input type="number" name="Metry_kwadratowe" id="m2">
+    <input type="button" value="Oblicz" onclick="oblicz()">
+    <p id="wynik">Ile puszek farby potrzeba: </p>
+    <script>
+        function oblicz(){
+            var m2 = document.getElementById('m2').value;
+            console.log(m2+": Podstawowa wartość");
+
+            var x = m2 / 4;
+            console.log(x+": Wartość po dzieleniu");
+
+            var y = Math.ceil(x);
+            console.log(y+": Zaokrąglona wartość");
+            document.getElementById('wynik').innerHTML = 'Ile puszek farby potrzeba:'+y;
+            }
+        
+
+
+    </script>
+</body>
+</html>
